@@ -29,7 +29,7 @@ public class AppCardDeliveryTest {
         $("[data-test-id= 'agreement']").click();
         $("[class='button__content']").click();
         $("[class='notification__content']")
-                .shouldBe(Condition.visible,Duration.ofSeconds(30))
+                .shouldBe(Condition.visible,Duration.ofSeconds(15))
                 .shouldHave(Condition.exactText("Встреча успешно забронирована на " + planningData));
 
 
